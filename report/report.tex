@@ -1,0 +1,45 @@
+%! Author = mikhail
+%! Date = 04.11.2022
+
+% Preamble
+\include{prepreamble}
+\documentclass{bmstu}
+\include{preamble}
+
+% Biblio
+\addbibresource{biblio.bib}
+
+% Document
+\begin{document}
+
+    \makecourseworktitle
+    {Информатика, искусственный интеллект и системы управления} % Название факультета
+    {Программное обеспечение ЭВМ и информационные технологии} % Название кафедры
+    {Тема курсовой работы} % Тема работы
+    {ИУ7-61Б} % Номер группы
+    {Кормановский~М.~В.} % ФИО студента
+    {Руководительский Р. Р.} % ФИО научного руководителя
+    {}
+    {}
+
+    \include{00-essay}
+    \maketableofcontents
+    \include{01-defs-abbrs}
+
+    \include{1-intro}
+    \include{2-analysis}
+    \include{3-design}
+    \include{4-tech}
+    \include{5-experiment}
+    \include{6-conclusion}
+
+    \clearpage
+    \phantomsection
+    \addcontentsline{toc}{chapter}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
+    \printbibliography[title=СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ]
+
+    \begin{appendices}
+        \include{7b-appendix-b}
+    \end{appendices}
+
+\end{document}

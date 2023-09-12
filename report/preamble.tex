@@ -1,0 +1,39 @@
+% пакеты
+\usepackage{csquotes}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Библиография
+\NewBibliographyString{accessmode}
+\DeclareFieldFormat{url}{\bibstring{accessmode}\addcolon\space\url{#1}}
+\DeclareFieldFormat{title}{#1}
+\DefineBibliographyStrings{russian}{
+accessmode={Режим доступа:},
+urlseen={дата обращения:}
+}
+% скобки после пунктов
+\setenumerate[1]{label={ \arabic*)}}
+\usepackage{enumitem}
+
+% математика в листингах
+\lstset{
+mathescape=true
+}
+
+% \FloatBarrier
+\usepackage{placeins}
+
+% $ в листингах
+\newcommand{\dlr}{\mbox{\textdollar}}
+
+% Тире в itemize
+\renewcommand\labelitemi{---}
+
+% \foreach
+\usepackage{pgffor}
+
+% Длинные таблицы
+\usepackage{longtable}
+
+% Таблица справа
+\captionsetup[table]{justification=raggedleft,singlelinecheck=off}
