@@ -37,3 +37,26 @@ mathescape=true
 
 % Таблица справа
 \captionsetup[table]{justification=raggedleft,singlelinecheck=off}
+
+% Картинки
+\newcommand{\img}[3] {
+\begin{figure}[t!]
+    \center{\includegraphics[height=#1]{inc/img/#2}}
+    \caption{#3}
+    \label{img:#2}
+\end{figure}
+}
+\newcommand{\imgw}[3] {
+\begin{figure}[h!]
+    \center{\includegraphics[width=#1]{inc/img/#2}}
+    \caption{#3}
+    \label{img:#2}
+\end{figure}
+}
+\newcommand{\boximg}[3] {
+\begin{figure}[h]
+    \center{\fbox{\includegraphics[height=#1]{inc/img/#2}}}
+    \caption{#3}
+    \label{img:#2}
+\end{figure}
+}
